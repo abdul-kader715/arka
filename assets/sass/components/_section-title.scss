@@ -20,7 +20,7 @@
 		text-transform: capitalize;
 		font-family: $heading-font;
 		margin-top: 12px;
-		font-weight: 300;
+		font-weight: 400;
 		font-size: 50px;
 		line-height: 75px;
 		color: $dark-gray;
@@ -33,7 +33,7 @@
 			width: 50%;
 			height: 100%;
 			content: "";
-			border-bottom: 1px dotted $theme-primary-color-s2;
+			border-bottom: 1px dashed $theme-primary-color-s2;
 			transform: translateX(-50%);
 		}
 		&::after{
@@ -43,7 +43,7 @@
 			width: 40%;
 			height: 100%;
 			content: "";
-			border-bottom: 1px dotted $theme-primary-color-s2;
+			border-bottom: 1px dashed $theme-primary-color-s2;
 			transform: translateX(-50%);
 		}
 

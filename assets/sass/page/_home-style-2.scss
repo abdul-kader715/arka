@@ -1,0 +1,164 @@
+/*--------------------------------------------------------------
+5. Home-style-2
+--------------------------------------------------------------*/
+
+
+
+/*5.2 arka-service-section-s2*/
+.arka-service-section-s2 {
+    padding: 120px 0;
+    padding-bottom: 60px;
+
+    @media (max-width:1199px) {
+        padding-bottom: 90px;
+    }
+
+    @media (max-width:991px) {
+        padding-top: 90px;
+        padding-bottom: 60px;
+    }
+
+    @media (max-width:767px) {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+
+
+    .service-left-item {
+        margin-bottom: 60px;
+        margin-right: 30px;
+
+        @media (max-width:1199px) {
+            margin-right: 0px;
+            margin-bottom: 30px;
+        }
+
+        &:nth-child(3) {
+            margin-right: 0;
+        }
+
+        &:nth-child(6) {
+            margin-right: 0;
+        }
+
+        @media (max-width:399px) {
+            display: block;
+            text-align: center;
+        }
+
+        .icon {
+            @media (max-width:399px) {
+                margin: 0 auto;
+                margin-bottom: 15px;
+                width: 60px;
+            }
+        }
+
+        .text {
+            @media (max-width:399px) {
+                padding-left: 0;
+                text-align: center;
+            }
+        }
+
+    }
+
+    .service-left-item .text h2 a {
+        @media (max-width:1399px) {
+            font-size: 29px;
+        }
+
+        @media (max-width:1199px) {
+            font-size: 26px;
+        }
+
+    }
+
+}
+
+/*5.3 arka-project-section-s2 */
+.arka-project-section-s2 {
+
+    .wpo-section-title {
+        text-align: center;
+
+        h2 {
+            &::before {
+                left: 50%;
+                transform: translateX(-50%);
+                width: 50%;
+
+            }
+
+            &::after {
+                left: 50%;
+                transform: translateX(-50%);
+                width: 40%;
+            }
+        }
+    }
+
+    .project-wrap {
+        margin-top: 35px;
+    }
+
+    .project-slider {
+
+
+
+        .owl-item.active.center {
+            margin-top: 0;
+
+            @media (max-width:1399px) {
+                margin-top: 0;
+            }
+
+            @media (max-width:1199px) {
+                margin-top: 0;
+            }
+
+            @media (max-width:767px) {
+                margin-top: 0;
+            }
+
+            @media (max-width:574px) {
+                margin-top: 0;
+            }
+        }
+
+
+
+
+    }
+}
+
+/*5.4 arka-testimonial-section-s2*/
+.arka-testimonial-section-s2 {
+    padding: 120px 0;
+
+    .testimonial-left-item {
+
+        .image {
+            width: 170px;
+            height: 170px;
+            margin: 0;
+        }
+    }
+
+    .testimonial-item {
+        position: relative;
+        margin: 0;
+
+        .icon {
+            position: absolute;
+            right: 0;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 50px;
+            padding-right: 75px;
+        }
+    }
+}
