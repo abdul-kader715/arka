@@ -11,7 +11,8 @@
 	text-align: center;
 	color: #D9916A;
 	transition: all .3s ease-in-out;
-	&::before{
+
+	&::before {
 		position: absolute;
 		content: "";
 		left: -5px;
@@ -43,7 +44,7 @@
 .theme-btn-s2 {
 	color: $theme-primary-color;
 	display: inline-block;
-	font-family:$base-font-s2;
+	font-family: $base-font-s2;
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 25px;
@@ -76,20 +77,27 @@
 	margin-top: 15px;
 	border-radius: 5px;
 	padding: 10px 45px;
-
-	
-
-	&:after{
+	background: $theme-primary-color-s2;
+	color: $white;
+	&::before {
+		border: 1px dashed $theme-primary-color-s2;
+	}
+	&:after {
 		display: none;
 	}
-	&:hover{
+
+	&:hover {
 		background-color: darken($theme-primary-color, 8%);
 	}
 
-	&.s1{
+	&.s1 {
 		background: #ddd;
+		
+		&::before {
+			border: 1px dashed #ddd;
+		}
 
-		&:hover{
+		&:hover {
 			background-color: darken(#ddd, 8%);
 		}
 	}

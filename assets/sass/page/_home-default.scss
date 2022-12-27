@@ -1065,7 +1065,7 @@
 }
 
 /*3.6 arka-cta-section */
-.arka-cta-section {
+.arka-cta-section,.arka-cta-section-s2 {
     background: url(../images/cta-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1087,7 +1087,7 @@
     .cta-content {
         text-align: center;
 
-        span {
+        h5 {
             display: inline-block;
             color: $white;
             font-family: $base-font-s2;
