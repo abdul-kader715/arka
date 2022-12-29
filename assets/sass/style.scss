@@ -1,6 +1,6 @@
 /*------------------------------------------------------------------
 [Master Stylesheet]
-Theme Name:     Canun – Lawyer and Attorney HTML Template
+Theme Name:  Arka – Architecture & Interior HTML5 Template
 Version:        1.0.0
 -------------------------------------------------------------------*/
 
@@ -19,48 +19,51 @@ Version:        1.0.0
 
 3. content
 	3.1 wpo-hero-slider
-	3.2 wpo-features-section
-	3.3 wpo-contact-section
-	3.4 wpo-service-section
-	3.5 wpo-case-section
-	3.6 wpo-testimonials-section
-	3.7 wpo-team-section
-	3.8 wpo-consultancy-section
+	3.2 arka-about-section
+	3.3 wpo-fun-fact-section
+	3.4 arka-service-section
+	3.5 arka-project-section 
+	3.6 wpo-pricing-section
+	3.7 arka-testimonial-section 
+	3.8 arka-cta-section 
 	3.9 wpo-blog-section
 
 4. wpo-footer
 
 5. Home-style-2
-   5.1	wpo-features-section-s2
-   5.2	wpo-about-section
-   5.3	wpo-service-section-s2
-   5.4	wpo-fun-fact-section
+   5.1 arka-about-section-s2
+   5.2 arka-about-section-s3
+   5.3 arka-service-section-s2
+   5.4 arka-project-section-s2
+   5.5 arka-team-section
+   5.6 arka-testimonial-section-s2
+   5.7 arka-cta-section-s2
+   5.8 wpo-fun-fact-section-s2
 
-6. wpo-Attorney-single
+6. wpo-team-single
 
-7. wpo-service-single-section
+7. wpo-shop-page
 
-8. wpo-case-section
+8. wpo-shop-single-page
 
-9. wpo-cart-page-style
+9. wpo-checkout-page-style
 
-10. wpo-checkout-page-style
+10. wpo-cart-page-style
 
-11. wpo-shop-page
+11. wpo-project-single
 
-12. wpo-shop-single-page
+12. wpo-service-single
 
-13. wpo-pricing-page
+12. wpo-blog-pg-section
 
-14. wpo-faq-page
+14. wpo-blog-single-section
 
-15. wpo-blog-pg-section
+15. wpo-contact-pg-section
 
-16. wpo-blog-single-section
+16. wpo-faq-page
 
-17. wpo-contact-pg-section
+17. error-404-section
 
-18. error-404-section
 
 ----------------------------------------------------------------*/
 
@@ -101,10 +104,29 @@ Version:        1.0.0
 @import "page/home-default";
 @import "page/home-style-2";
 
+@import "page/_team-single";
+
+@import "page/shop";
+@import "page/shop-single";
+
+@import "page/cart";
+
+@import "page/checkout";
+
+@import "page/project-single";
+
+@import "page/service-single";
 
 @import "page/_blog";
 
 @import "page/_blog-single";
+
+@import "page/contact";
+
+@import "page/_faq";
+
+
+@import "page/_error-404";
 
 
 

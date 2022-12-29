@@ -61,10 +61,13 @@
 		}
 
 		.slide-content {
-			padding-bottom: 85px;
+			padding-bottom: 150px;
 
-		
 			@media(max-width:991px) {
+				padding-bottom: 30px;
+			}
+
+			@media(max-width:767px) {
 				padding-bottom: 0;
 			}
 
@@ -163,7 +166,7 @@
 .wpo-hero-slider-s2 {
 
 	@include media-query(1199px) {
-		height: 680px;
+		height: 600px;
 	}
 
 	@include media-query(991px) {
@@ -235,7 +238,7 @@
 		text-align: center;
 		margin: 0 auto;
 
-		@include media-query(767px) {
+		@include media-query(991px) {
 			max-width: 500px;
 		}
 
@@ -317,6 +320,10 @@
 		height: 700px;
 	}
 
+	@include media-query(767px) {
+		height: 500px;
+	}
+
 
 	&:before {
 		position: absolute;
@@ -324,18 +331,14 @@
 		top: 0;
 		width: 100%;
 		height: 100%;
-		background: #ffffffbf;
+		background: rgb(255 255 255 / 74%);
 		content: "";
-		opacity: 0.6;
 
 		@media (min-width:992px) {
 			display: none;
 		}
 
-		@media (max-width:767px) {
-			background: #040128;
-			opacity: 0.1;
-		}
+
 	}
 
 
@@ -369,6 +372,10 @@
 					margin-top: 100px;
 				}
 
+				@media (max-width:767px) {
+					margin-top: 0;
+				}
+
 				span {
 					font-family: $base-font-s2;
 					font-weight: 400;
@@ -396,8 +403,8 @@
 					}
 
 					@media (max-width:767px) {
-						font-size: 38px;
-						line-height: 50px;
+						font-size: 30px;
+						line-height: 40px;
 					}
 				}
 
@@ -412,6 +419,10 @@
 
 					@media (max-width:1199px) {
 						margin-right: 0;
+					}
+
+					@media (max-width:767px) {
+						margin-bottom: 30px;
 					}
 				}
 
@@ -438,7 +449,7 @@
 		position: absolute;
 		top: 10%;
 		left: 0;
-		z-index: -1;
+		z-index: -11;
 
 		@media (max-width:991px) {
 			display: none;
@@ -450,7 +461,7 @@
 		position: absolute;
 		left: 0;
 		bottom: 0;
-		z-index: -1;
+		z-index: -11;
 
 		@media (max-width:991px) {
 			display: none;
@@ -514,12 +525,20 @@
 		}
 
 		@media (max-width:767px) {
-			display: none;
+			left: 0;
+			top: 0;
+			clip-path: none;
+			width: 100%;
+			height: 100%;
 		}
 
 		img {
 			width: 100%;
 			object-fit: cover;
+
+			@media (max-width:767px) {
+				height: 100vh;
+			}
 		}
 	}
 

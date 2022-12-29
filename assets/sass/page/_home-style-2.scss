@@ -2,7 +2,7 @@
 5. Home-style-2
 --------------------------------------------------------------*/
 
-/* arka-about-section-s2 */
+/*5.1 arka-about-section-s2 */
 .arka-about-section-s2,
 .arka-about-section-s3 {
     background: #F8F8F8;
@@ -353,6 +353,7 @@
 
 }
 
+/*5.2 arka-about-section-s3 */
 .arka-about-section-s3 {
     background: transparent;
 
@@ -402,9 +403,11 @@
             @media (max-width:991px) {
                 right: -40px;
             }
+
             @media (max-width:575px) {
                 right: 0px;
             }
+
             @media (max-width:399px) {
                 top: 200px;
             }
@@ -477,24 +480,25 @@
                     transform: rotate(315deg);
                     margin-top: -33px;
                     margin-right: -41px;
-                        @media (max-width:1199px) {
-                            font-size: 19px;
-                        }
 
-                        @media (max-width:575px) {
-                            font-size: 15px;
-                            line-height: 20px;
-                            margin-top: -35px;
-                    margin-right: -35px;
-                        }
-                    
+                    @media (max-width:1199px) {
+                        font-size: 19px;
+                    }
+
+                    @media (max-width:575px) {
+                        font-size: 15px;
+                        line-height: 20px;
+                        margin-top: -35px;
+                        margin-right: -35px;
+                    }
+
                 }
             }
         }
     }
 }
 
-/*5.2 arka-service-section-s2*/
+/*5.3 arka-service-section-s2*/
 .arka-service-section-s2 {
     padding: 120px 0;
     padding-bottom: 60px;
@@ -566,7 +570,7 @@
 
 }
 
-/*5.3 arka-project-section-s2 */
+/*5.4 arka-project-section-s2 */
 .arka-project-section-s2 {
 
     .wpo-section-title {
@@ -622,7 +626,7 @@
     }
 }
 
-/* arka-team-section */
+/*5.5 arka-team-section */
 .arka-team-section {
     padding-bottom: 0;
     position: relative;
@@ -890,7 +894,7 @@
 
 }
 
-/*5.4 arka-testimonial-section-s2*/
+/*5.6 arka-testimonial-section-s2*/
 .arka-testimonial-section-s2 {
     padding: 120px 0;
 
@@ -997,7 +1001,7 @@
 
 }
 
-/* arka-cta-section-s2 */
+/*5.7 arka-cta-section-s2 */
 .arka-cta-section-s2 {
     z-index: 0;
     overflow: hidden;
@@ -1090,4 +1094,95 @@
         }
     }
 
+}
+
+/*5.8 wpo-fun-fact-section-s2 */
+
+.wpo-fun-fact-section-s2 {
+    margin-top: -172px;
+
+    @include media-query(1199px) {
+        margin-top: -149px;
+    }
+
+    @include media-query(991px) {
+        margin-top: 0px;
+        padding-top: 90px;
+    }
+
+    @include media-query(767px) {
+        padding-top: 80px;
+    }
+
+    .wpo-fun-fact-grids {
+        border: 1px dashed transparent;
+        position: relative;
+
+        @include media-query(991px) {
+            padding: 0;
+        }
+
+        .bg-shape {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+
+            @include media-query(1399px) {
+                top: 25px;
+            }
+
+            @include media-query(991px) {
+                position: unset;
+                display: none;
+            }
+        }
+    }
+
+
+    .wpo-fun-fact-grids .grid {
+        border-top: 1px dashed transparent;
+        border-bottom: 1px dashed transparent;
+        border-left: 1px dashed transparent;
+
+        @include media-query(991px) {
+            border-top: 1px dashed $border-color;
+            border-bottom: 1px dashed $border-color;
+            border-left: 1px dashed $border-color;
+        }
+
+        &:nth-child(1) {
+            @include media-query(991px) {}
+        }
+
+        &:nth-child(4) {
+            border-right: 1px dashed transparent;
+
+            @include media-query(991px) {
+                border-right: 1px dashed $border-color;
+            }
+        }
+
+        &:nth-child(2) {
+            @include media-query(991px) {}
+        }
+
+        @include media-query(991px) {
+            width: 50%;
+        }
+
+        @include media-query(767px) {
+            width: 100%;
+            float: none;
+        }
+    }
+
+    .grid h3+p {
+        @include media-query(1199px) {
+            font-size: 17px;
+            line-height: 15px;
+        }
+    }
 }

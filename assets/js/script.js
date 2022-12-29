@@ -665,7 +665,37 @@
         })
     }
 
+   /*------------------------------------------
+        = wpo-project-single-main-img
+    -------------------------------------------*/
+    if($(".wpo-project-single-main-img".length)) {
+        $(".wpo-project-single-main-img").owlCarousel({
+            mouseDrag: false,
+            smartSpeed: 500,
+            margin: 30,
+            loop:true,
+            nav: true,
+            navText: ['<i class="fi ti-arrow-left"></i>','<i class="fi ti-arrow-right"></i>'],
+            dots: false,
+            items: 1
+        });
+    } 
 
+    /*------------------------------------------
+        = POST SLIDER
+    -------------------------------------------*/
+    if($(".post-slider".length)) {
+        $(".post-slider").owlCarousel({
+            mouseDrag: false,
+            smartSpeed: 500,
+            margin: 30,
+            loop:true,
+            nav: true,
+            navText: ['<i class="fi ti-arrow-left"></i>','<i class="fi ti-arrow-right"></i>'],
+            dots: false,
+            items: 1
+        });
+    }
 
     /*------------------------------------------
         = SHOP DETAILS PAGE PRODUCT SLIDER
@@ -772,6 +802,10 @@
 
                 phone: "required",
 
+                adress: "required",
+
+                service: "required", 
+
                 subject: {
                     required: true
                 }
@@ -868,6 +902,8 @@
 
         });
     }
+
+
 
 
 
